@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DojoCars Oficial</title>
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta NAME="keywords" content="Ophyra.com, ledculture.com, Maryiserns.com , diseño web, programacion web, crea tu plantilla, programar correos html, marketing digital, red social, social network"> 
+
+
+
+    <meta NAME="description" CONTENT="Comunidad de expertos y amantes de la mecanica automotriz">
+
+    <meta NAME="robots" content="index">
+
+
+   
+    <style type="text/css">
+
+    #contador {
+
+        display:inline-block; font-size:18px; font-family:Arial; padding: 2%; color: #fff; background: #FF2E2E; 
+        border:solid 2px #000000;
+        -moz-border-radius-topleft: 8px;
+        -moz-border-radius-topright:8px;
+        -moz-border-radius-bottomleft:9px;
+        -moz-border-radius-bottomright:9px;
+        -webkit-border-top-left-radius:8px;
+        -webkit-border-top-right-radius:8px;
+        -webkit-border-bottom-left-radius:9px;
+        -webkit-border-bottom-right-radius:9px;
+        border-top-left-radius:8px;
+        border-top-right-radius:8px;
+        border-bottom-left-radius:9px;
+        border-bottom-right-radius:9px;
+        width: 80%
+
+    }
+
+    #construccion {
+        width: 70%;
+    }
+
+    #redes_iconos {
+        width: 5%
+    }
+
+
+
+     @media screen and (max-width:1000px) 
+
+    {
+
+            #construccion {
+                width: 90%;
+            }
+
+            #redes_iconos {
+                width: 12%
+            }
+
+            #contador { font-size: 15px; padding: 4% }
+
+    }
+
+
+
+
+    @media screen and (max-width:650px) 
+
+    {
+
+            #construccion {
+                width: 100%;
+            }
+
+            #redes_iconos {
+                width: 15%
+            }
+
+            #contador { font-size: 15px; padding: 4% }
+
+    }
+
+    </style>
+
+
+
+
+
+	<script>
+            var end = new Date('10/01/2018 9:30 AM');
+
+            var _second = 1000;
+            var _minute = _second * 60;
+            var _hour = _minute * 60;
+            var _day = _hour * 24;
+            var timer;
+
+            function showRemaining() {
+            var now = new Date();
+            var distance = end - now;
+            if (distance < 0) {
+
+            clearInterval(timer);
+            document.getElementById('countdown').innerHTML = 'EXPIRED!';
+
+            return;
+            }
+            var days = Math.floor(distance / _day);
+            var hours = Math.floor((distance % _day) / _hour);
+            var minutes = Math.floor((distance % _hour) / _minute);
+            var seconds = Math.floor((distance % _minute) / _second);
+
+            document.getElementById('countdown').innerHTML = "<p id='contador'>"+ days + " Dias - "+ hours + " horas - "+ minutes + " minutos - "+seconds + "  segundos para despegar</p>";
+            }
+
+            timer = setInterval(showRemaining, 1000);
+</script>
+
+
+
+</head>
+<body>
+
+
+
+<br><br><br>
+<center>
+<img src="construccion.jpg" id="construccion"><br><br><hr><hr><br>
+
+<div id="countdown" style="width: 100%"></div>
+
+<a href="https://www.facebook.com/Dojocars-729742820697115/"><img src="facebook.png" id="redes_iconos"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="https://www.instagram.com/dojocars/"><img src="instagram.png" id="redes_iconos"></a>
+
+
+
+</body>
+</html>
